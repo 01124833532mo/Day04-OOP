@@ -74,6 +74,18 @@
             Console.WriteLine(p3);
             #endregion
 
+            #region second project Define Class Maths that has four methods: Add, Subtract, Multiply, and Divide, each of them takes two parameters. Call each method in Main ().
+
+            //Console.WriteLine("add");
+            //Console.WriteLine(Maths.Add(10, 5));
+            //Console.WriteLine("Subtract");
+            //Console.WriteLine( Maths.Subtract(10, 0));
+            //Console.WriteLine("Multiply ");
+            //Console.WriteLine(Maths.Multiply(10, 5));
+
+            //Console.WriteLine("Divide ");
+            //Console.WriteLine( Maths.Divide(10, 0)); 
+            #endregion
 
 
 
