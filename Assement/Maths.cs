@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assement
 {
+
     internal class Maths
     {
         public static int Add(int a, int b)
