@@ -74,7 +74,100 @@
             Console.WriteLine(p3);
             #endregion
 
+            #region second project Define Class Maths that has four methods: Add, Subtract, Multiply, and Divide, each of them takes two parameters. Call each method in Main ().
 
+            //Console.WriteLine("add");
+            //Console.WriteLine(Maths.Add(10, 5));
+            //Console.WriteLine("Subtract");
+            //Console.WriteLine( Maths.Subtract(10, 0));
+            //Console.WriteLine("Multiply ");
+            //Console.WriteLine(Maths.Multiply(10, 5));
+
+            //Console.WriteLine("Divide ");
+            //Console.WriteLine( Maths.Divide(10, 0)); 
+            #endregion
+
+
+            #region region third project Define Class Duration To include Three Attributes Hours, Minutes and Seconds.
+            int h, m, s;
+
+            do
+            {
+                Console.WriteLine("enter hours");
+            } while (!int.TryParse(Console.ReadLine(), out h) || h < 1 || h > 12);
+
+
+            do
+            {
+                Console.WriteLine("enter minites");
+            } while (!int.TryParse(Console.ReadLine(), out m) || m < 1 || m >= 60);
+
+            do
+            {
+                Console.WriteLine("enter second");
+            } while (!int.TryParse(Console.ReadLine(), out s) || s < 1 || s >= 60);
+
+            Duration D1 = new Duration(h, m, s);
+
+            Console.WriteLine(D1.ToString());
+
+            Console.WriteLine("*********************************");
+
+            Duration D2 = new Duration(3600);
+            Console.WriteLine(D2);
+            Console.WriteLine("*********************************");
+
+            Duration D3 = new Duration(7800);
+            Console.WriteLine(D3);
+            Console.WriteLine("*********************************");
+
+
+            Duration D4 = new Duration(666);
+            Console.WriteLine(D4);
+
+            Console.WriteLine("*********************************");
+
+
+            Duration D5 = D1 + D2;
+            Console.WriteLine(D5);
+
+            Console.WriteLine("*********************************");
+
+            Duration D6 = D1 + 7800;
+            Console.WriteLine(D6);
+            Console.WriteLine("*********************************");
+
+
+            D3 = 666 + D3;
+            Console.WriteLine(D3);
+            Console.WriteLine("*********************************");
+
+            D3 = ++D1;
+            Console.WriteLine(D3);
+            Console.WriteLine("*********************************");
+            D3 = --D2;
+            Console.WriteLine(D3);
+            Console.WriteLine("*********************************");
+
+            D1 = D1 - D2;
+            Console.WriteLine(D1);
+
+            Console.WriteLine("*********************************");
+
+            Console.WriteLine(D1 > D2);
+
+            Console.WriteLine("*********************************");
+            Console.WriteLine(D1 <= D2);
+            Console.WriteLine("*********************************");
+            Console.WriteLine((bool)D1);
+            Console.WriteLine("*********************************");
+
+
+
+            DateTime dt = (DateTime)D1;
+            Console.WriteLine(dt.ToString("HH:mm:ss"));
+
+            #endregion
 
 
         }
