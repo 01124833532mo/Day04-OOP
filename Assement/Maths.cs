@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assement
 {
-
+    #region MyRegion
     internal class Maths
     {
         public static int Add(int a, int b)
@@ -37,4 +37,6 @@ namespace Assement
             return (double)a / b;
         }
     }
+    #endregion
+
 }
